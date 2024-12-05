@@ -15,7 +15,7 @@ module.exports = async (client, interaction) => {
     if (commandObject.devOnly) {
         if (!devs.includes(interaction.member.id)) {
             interaction.reply({
-                content: 'Only developers are allowed to run thes command.',
+                content: 'Only developers are allowed to run this command.',
                 ephemeral: true,
             });
             return
